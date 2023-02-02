@@ -1,0 +1,57 @@
+module timing_generator(output reg [7:0] red, green, blue, output hsync, vsync, blank, input [23:0] pixel_in, input clk, rst, fifo_empty);
+    
+  reg [9:0] horizontal;
+  reg [9:0] vertical;
+  reg [2:0] first_four;
+  reg fifo_empty_delay;
+  
+  assign hsync = ~((horizontal > 10'd15) && (horizontal < 10'd112));
+  assign vsync = ~((vertical > 10'd8) && (vertical < 10'd11));
+  assign blank = ~((horizontal < 10'd160) || (vertical < 10'd40));
+  
+  always@(posedge clk, posedge rst) begin
+    if(rst) begin
+      horizontal <= 10'd0;
+      vertical <= 10'd0;
+      first_four <= 3'd0;
+		fifo_empty_delay <= 1'b0;
+    end
+    else begin
+      if(first_four != 3'd4) begin
+        first_four <= first_four + 3'd1;
+      end
+      else if(!fifo_empty_delay) begin
+        if(vertical >= 10'd40) begin
+          if(horizontal == 10'd799) begin
+            horizontal <= 10'd0;
+            if(vertical == 10'd525) begin
+              vertical <= 10'd0;
+            end
+            else begin
+              vertical <= vertical + 10'd1;
+            end
+          end
+          else begin
+            horizontal <= horizontal + 10'd1;
+          end
+        end
+        else begin
+          vertical <= vertical + 10'd1;
+        end
+      end
+      fifo_empty_delay <= fifo_empty;
+    end 
+  end 
+  
+  always@(horizontal) begin
+    red = 8'bxxxxxxx;
+    blue = 8'bxxxxxxxx;
+    green = 8'bxxxxxxxx;
+    if(horizontal >= 10'd160) begin
+      red = pixel_in[23:16];
+      green = pixel_in[15:8];
+      blue = pixel_in[7:0];
+    end
+  end
+    
+endmodule

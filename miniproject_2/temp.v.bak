@@ -1,0 +1,59 @@
+module temp(output [23:0] pixel_out, output reg [12:0] addr, output reg fifo_write, input [23:0] pixel_in, input clk, rst, fifo_full);
+    
+    reg [6:0] horiz_count;
+    reg [5:0] vert_count;
+    reg [2:0] state, next_state;    
+    wire [6:0] next_horiz_count;
+    wire [5:0] next_vert_count;
+    
+    localparam IDLE = 3'd0, LAST = 3'd7;
+    
+    assign next_horiz_count = (horiz_count == 7'd79) ? 7'd0 : horiz_count + 7'd1;
+    assign next_vert_count = (vert_count == 6'd59) ? 6'd0 : vert_count + 6'd1;
+    assign pixel_out = pixel_in;
+    
+    always@(posedge clk, posedge rst) begin
+        if(rst) begin
+           state <= IDLE;
+           pixel_out <= 24'd0;
+           addr <= 13'd0;
+        end
+        else begin
+            if(!fifo_full) begin
+               if(state == 3'd6) begin
+                  horiz_count <= next_horiz_count;
+                  vert_count <= next_vert_count;
+               end
+               if(state == LAST) begin
+                  addr <= vert_count * 80 + horiz_count;
+               end
+            end
+            state <= next_state;
+        end 
+    end
+    
+    always@(state) begin
+        fifo_write = 1'b0;
+        case(state)
+            IDLE: begin
+                if(fifo_full) begin
+                  next_state = IDLE;  
+                end
+                else begin
+                   fifo_write = 1'b1;
+                   next_state = state + 3'd1; 
+                end
+            end
+            default: begin
+                if(fifo_full) begin
+                   next_state = state; 
+                end
+                else begin
+                   next_state = state + 3'd1; 
+                   fifo_write = 1'b1;
+                end
+            end
+        endcase
+    end
+    
+endmodule

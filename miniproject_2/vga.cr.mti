@@ -1,0 +1,43 @@
+{D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/timing_generator.v} {1 {vlog -work work {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/timing_generator.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module timing_generator
+
+Top level modules:
+	timing_generator
+
+} {} {}} {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/top_level.v} {1 {vlog -work work {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/top_level.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top_level
+
+Top level modules:
+	top_level
+
+} {} {}} {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_display_plane.v} {1 {vlog -work work {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_display_plane.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module t_display_plane
+
+Top level modules:
+	t_display_plane
+
+} {} {}} {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/display_plane.v} {1 {vlog -work work {D:\Users\John\Documents\ECE 554\Projects\Mini-Project 2\miniproject_2\display_plane.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module display_plane
+
+Top level modules:
+	display_plane
+
+} {} {}} {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_timing_generator.v} {1 {vlog -work work {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_timing_generator.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module t_timing_generator
+
+Top level modules:
+	t_timing_generator
+
+} {} {}} {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/rom_test.v} {1 {vlog -work work {D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/rom_test.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rom_test
+
+Top level modules:
+	rom_test
+
+} {} {}}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="ROM" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+ROM YourInstanceName (
+    .clka(clka),
+    .addra(addra), // Bus [12 : 0] 
+    .douta(douta)); // Bus [23 : 0] 
+
+ 
+		</Template>
+		<Template label="xclk_fifo" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+xclk_fifo YourInstanceName (
+    .din(din), // Bus [23 : 0] 
+    .rd_clk(rd_clk),
+    .rd_en(rd_en),
+    .rst(rst),
+    .wr_clk(wr_clk),
+    .wr_en(wr_en),
+    .dout(dout), // Bus [23 : 0] 
+    .empty(empty),
+    .full(full));
+
+ 
+		</Template>
+		<Template label="temp" treetype="template">
+		</Template>
+		<Template label="fgh" treetype="template">
+		</Template>
+		<Template label="fifo" treetype="template">
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="ROM" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component ROM
+    port (
+    clka: IN std_logic;
+    addra: IN std_logic_VECTOR(12 downto 0);
+    douta: OUT std_logic_VECTOR(23 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : ROM
+        port map (
+            clka =&gt; clka,
+            addra =&gt; addra,
+            douta =&gt; douta);
+ 
+		</Template>
+		<Template label="xclk_fifo" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component xclk_fifo
+    port (
+    din: IN std_logic_VECTOR(23 downto 0);
+    rd_clk: IN std_logic;
+    rd_en: IN std_logic;
+    rst: IN std_logic;
+    wr_clk: IN std_logic;
+    wr_en: IN std_logic;
+    dout: OUT std_logic_VECTOR(23 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : xclk_fifo
+        port map (
+            din =&gt; din,
+            rd_clk =&gt; rd_clk,
+            rd_en =&gt; rd_en,
+            rst =&gt; rst,
+            wr_clk =&gt; wr_clk,
+            wr_en =&gt; wr_en,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full);
+ 
+		</Template>
+		<Template label="temp" treetype="template">
+		</Template>
+		<Template label="fgh" treetype="template">
+		</Template>
+		<Template label="fifo" treetype="template">
+		</Template>
+	</Folder>
+</RootFolder>

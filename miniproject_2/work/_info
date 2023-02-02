@@ -1,0 +1,178 @@
+m255
+K3
+13
+cModel Technology
+Z0 dQ:\MS6.001\examples
+vdisplay_plane
+Z1 IECoJTKePIWf0ib]if>5OJ1
+Z2 VX6eXlQB_hIJ>g0Xk]ACOm3
+Z3 dD:\Users\John\Documents\ECE 554\Projects\Mini-Project 2\miniproject_2
+Z4 w1379615050
+Z5 8D:\Users\John\Documents\ECE 554\Projects\Mini-Project 2\miniproject_2\display_plane.v
+Z6 FD:\Users\John\Documents\ECE 554\Projects\Mini-Project 2\miniproject_2\display_plane.v
+L0 21
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -L mtiAvm -O0
+Z9 tCoverOpt 2
+Z10 !s100 n79;R1^_11aicbYY<K1CB1
+Z11 !s108 1379615062.064000
+Z12 !s107 D:\Users\John\Documents\ECE 554\Projects\Mini-Project 2\miniproject_2\display_plane.v|
+Z13 !s90 -reportprogress|300|-work|work|D:\Users\John\Documents\ECE 554\Projects\Mini-Project 2\miniproject_2\display_plane.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vROM
+Z14 IXYhIiW3J7nE30L1W0h^DC2
+Z15 V>YKf[eN8c8MCHflWJ8_P]1
+Z16 dI:\ECE 554\miniproject_2
+Z17 w1379269553
+Z18 8I:/ECE 554/miniproject_2/vga/ROM.v
+Z19 FI:/ECE 554/miniproject_2/vga/ROM.v
+L0 40
+Z20 OE;L;6.3;37
+r1
+31
+Z21 o-work work -nocovercells -L mtiAvm
+Z22 n@r@o@m
+!s85 0
+vrom
+Z23 VI60oCMmHSbI7a7d7H`?3b3
+r1
+31
+Z24 IJ?O5SG_D<iUkR[QO[60E01
+Z25 dI:\ECE 554\Mini-Project 2\miniproject_2
+Z26 w1379535424
+Z27 8I:/ECE 554/Mini-Project 2/miniproject_2/rom.v
+Z28 FI:/ECE 554/Mini-Project 2/miniproject_2/rom.v
+L0 1
+R20
+R21
+!s85 0
+vrom_test
+Z29 !s100 <;RQhJ0PfY<L_55XQVJMN2
+Z30 IK6:_fDTkOMa<KX_k?[?c12
+Z31 VB5:NGU2RgCVY0COSlYgFC2
+R3
+Z32 w1379536286
+Z33 8D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/rom_test.v
+Z34 FD:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/rom_test.v
+L0 1
+R7
+r1
+31
+Z35 !s90 -reportprogress|300|-work|work|D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/rom_test.v|
+R8
+R9
+Z36 !s108 1379615062.138000
+Z37 !s107 D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/rom_test.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vt_display_plane
+Z38 !s100 h<nF^7K<eJ^PWTzk@ZTf?1
+Z39 IjVN5l94=JOj2A2;@[nh_?3
+Z40 VMzaamAA@]CQ]MbWGl?KP43
+R3
+Z41 w1379558818
+Z42 8D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_display_plane.v
+Z43 FD:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_display_plane.v
+L0 1
+R7
+r1
+31
+Z44 !s90 -reportprogress|300|-work|work|D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_display_plane.v|
+R8
+R9
+Z45 !s108 1379615062.240000
+Z46 !s107 D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_display_plane.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vt_timing_generator
+Z47 !s100 0XQk18f_U<Aj3`VJ[Q3Fg0
+Z48 I:]odLV_oHP?<Z;nZ6UMaS0
+Z49 VPk:IbenC5anm1;`5Q1]P@2
+R3
+Z50 w1379561917
+Z51 8D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_timing_generator.v
+Z52 FD:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_timing_generator.v
+L0 1
+R7
+r1
+31
+Z53 !s90 -reportprogress|300|-work|work|D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_timing_generator.v|
+R8
+R9
+Z54 !s108 1379615062.331000
+Z55 !s107 D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/t_timing_generator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtemp
+Z56 I8N?PB>?0G5D=S^I2jNL;a3
+Z57 V9@_`<[[B[2?M6Q@hh0kRR1
+R16
+Z58 w1379455671
+Z59 8I:/ECE 554/miniproject_2/temp.v
+Z60 FI:/ECE 554/miniproject_2/temp.v
+L0 1
+R20
+r1
+31
+R21
+!s85 0
+vtiming_generator
+!i10b 1
+!s100 ]8]Bd_Kdkhf=160OcY^bW2
+I8Wj53DTYGPe]fS]^84VFn3
+Z61 VlE4?CVM4T7oR6GgY[:HMh2
+R3
+w1379614618
+Z62 8D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/timing_generator.v
+Z63 FD:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/timing_generator.v
+L0 21
+R7
+r1
+!s85 0
+31
+!s108 1379615062.522000
+!s107 D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/timing_generator.v|
+Z64 !s90 -reportprogress|300|-work|work|D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/timing_generator.v|
+!s101 -O0
+R8
+R9
+vtop_level
+Z65 !s100 z?[l3o@gfb@[A?j9flBZ>1
+Z66 I@95?hdHPhCX4mFg:]dI;Y1
+Z67 V0CX_[Z<i]om5R0=EPOHBO2
+R3
+Z68 w1379562379
+Z69 8D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/top_level.v
+Z70 FD:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/top_level.v
+L0 21
+R7
+r1
+31
+Z71 !s90 -reportprogress|300|-work|work|D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/top_level.v|
+R8
+R9
+!i10b 1
+!s85 0
+Z72 !s108 1379615062.440000
+Z73 !s107 D:/Users/John/Documents/ECE 554/Projects/Mini-Project 2/miniproject_2/top_level.v|
+!s101 -O0
+vvga_logic
+Z74 VjBn3ZXVKJ>[JHg1k43dAG0
+r1
+31
+Z75 I;_24>z>YQ3eiLH68mSQK@3
+R25
+Z76 w1379561293
+Z77 8I:/ECE 554/Mini-Project 2/miniproject_2/vga_logic.v
+Z78 FI:/ECE 554/Mini-Project 2/miniproject_2/vga_logic.v
+L0 21
+R20
+R21
+!s85 0

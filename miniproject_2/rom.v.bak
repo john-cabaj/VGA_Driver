@@ -1,0 +1,23 @@
+module rom(output reg [23:0] pixel_out, input [12:0] addr, input clk, rst);
+    
+    reg [23:0] rom[0:4800];
+    
+    initial begin
+       $readmemh("tiny_img.coe", rom); 
+    end
+    
+    /*always@(posedge clk) begin
+        if(clk) begin
+            if((addr >= 13'd0) && (addr < 13'd4800)) begin
+                  pixel_out = rom[addr];
+            end
+        end
+    end*/
+    
+    always@(addr) begin
+       if((addr >= 13'd0) && (addr < 13'd4800)) begin
+          pixel_out = rom[addr];
+       end
+    end
+    
+endmodule
